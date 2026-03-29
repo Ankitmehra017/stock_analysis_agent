@@ -56,7 +56,7 @@ def main() -> None:
 
     make_crew = build_stock_analysis_crew(llm)
 
-    tickers = [arg.upper() for arg in sys.argv[1:]] if len(sys.argv) > 1 else ["vedanta"]
+    tickers = [arg.upper() for arg in sys.argv[1:]] if len(sys.argv) > 1 else ["Tesla"]
 
     for ticker in tickers:
         run(ticker, make_crew)
